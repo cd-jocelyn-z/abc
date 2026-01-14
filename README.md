@@ -7,7 +7,7 @@
 bash setup.sh
 ```
 
-Note: the data for the ALL-mixture will be downloaded, the filtered dataset Ofp-Arbre is made available in the drive
+Note: The data for the ALL-mixture will be downloaded, and the filtered dataset Ofp-Arbre will be made available in the drive.
 
 ###  Set up the enviornement
 ```
@@ -20,6 +20,4 @@ Example Usage:
 ```
 python nllb-bre-fra-lora.py --train data/train.jsonl --dev data/dev.jsonl --test data/test.jsonl --output-dir "encoder_crossattn_full_3ep" --config module_configs.json --lora-config "encoder_crossattn" --epoch 3
 ```
-
-
 https://drive.google.com/drive/folders/1HvCYGiZOhZy7FPPsp8qgJK3W8rCnciBO?usp=sharing
