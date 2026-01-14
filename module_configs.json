@@ -1,0 +1,30 @@
+{
+  "q_v_only": {
+    "target_modules": ["q_proj", "v_proj"],
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "restrict_to": null
+  },
+  "encoder_only": {
+    "target_modules": ["q_proj", "k_proj", "v_proj", "out_proj", "fc1", "fc2"],
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "restrict_to": "encoder"
+  },
+  "encoder_crossattn": {
+    "target_modules": ["q_proj", "k_proj", "v_proj", "out_proj", "fc1", "fc2"],
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "restrict_to": "encoder_and_crossattn"
+  },
+  "all_modules": {
+    "target_modules": ["q_proj", "k_proj", "v_proj", "out_proj", "fc1", "fc2"],
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "restrict_to": null
+  }
+}
